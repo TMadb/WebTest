@@ -112,18 +112,14 @@ table.altrowstable td {
    		     <a href="<c:url value='#'/>" aria-label="Next">
              <span aria-hidden="true">&raquo;</span>
              </a>
-   		   </li>   		   
-   	
+   		   </li>   		     	
    		</ul>
    		</nav>
    		</div>
-   		<div style="margin-left:42%;display: inline-block;">	  		    		 
-   		      		
+   		<div style="margin-left:42%;display: inline-block;">	  		    		   		      		
    		</div>
-   		<span style="margin-left:8%">
-   		   
-   		</span>
-   			 
+   		<span style="margin-left:8%">	   
+   		</span> 			 
 </body>
 </html>
 
