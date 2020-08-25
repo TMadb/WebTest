@@ -11,6 +11,6 @@
   <span> ${requestScope.user}欢迎回来</span><br />
   <a href="<c:url value='/CustomerServlet?method=showlist'/>">查看所有人员信息</a>
   <a href="<c:url value='/CustomerServlet?method=showlistByConditions'/>">查看所有人员信息分页显示</a>
-  
+  <a href="<c:url value='/ajaxcustomerlist.jsp'/>">Ajax查看所有人员信息分页显示</a>
 </body>
 </html>
