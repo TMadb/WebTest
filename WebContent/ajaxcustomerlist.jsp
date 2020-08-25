@@ -12,8 +12,8 @@
 
 <script type="text/javascript">
    $(function(){
-	    getPath();
-	    initData();
+	    
+	   initData();
    });
 </script>
 
@@ -72,7 +72,7 @@ table.altrowstable td {
 </head>
 <body>
       <!--多条件联合查询-->
-      <form style="margin-left:38%" action="<c:url value='/CustomerServlet'/>" method="get">
+      <form style="margin-left:38%" action="<c:url value="AjaxCustomerServlet?method=AjaxshowlistByConditions" />" method="get">
          <input type="hidden" name="method"  value="showlistByConditions"/>
          姓名:<input type="text" placeholder="输入姓名进行模糊查询" name="cname" /><br />
          id:<input type="text" placeholder="输入id进行模糊查询" name="cid"/><br />
@@ -83,7 +83,7 @@ table.altrowstable td {
          </select><br />        
          邮箱:<input type="text" placeholder="输入邮箱" name="email" /><br />
          <input  style="margin-left:30px" type="submit" value="查询" />
-         <input id="test" type="button" />
+         
       </form>
    
    		<table style="margin:auto" class="altrowstable" id="alternatecolor">

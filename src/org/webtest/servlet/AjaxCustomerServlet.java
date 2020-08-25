@@ -41,6 +41,7 @@ public class AjaxCustomerServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		try {
+//			System.out.println("test");
 			int pageSize = 10;
 			// 获取索引的方法
 			int pageIndex = getPageIndex(req);
