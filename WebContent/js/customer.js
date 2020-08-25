@@ -6,12 +6,12 @@
 }
 
   function initData(){
-	  $.get(getPath()+"/AjaxCustomerServlet?method=AjaxshowlistByConditions",
+	  $.post(getPath()+"/AjaxCustomerServlet?method=AjaxshowlistByConditions",
              null,
-             function(data){
-	            alert(getPath()+"/AjaxCustomerServlet?method=AjaxshowlistByConditions");
+             function(data){	            
 				//显示数据到页面
-				if(data.data.stutasCode==200){
+				if(data.stutasCode==200){
+					alert(data.data.list);
 					showData(data);
 					//显示页码
 				    showPager(data);
@@ -21,8 +21,12 @@
 }
 
   function showData(data){
-	  var html = "";
+	
+	
+			alert("aaa");
+	    var html="";
 	  $(data.data.list).each(function(){
+		alert("bbb");
 		 html+="<tr>";
 	     html+="<td>"+this.cid+"</td>";
          html+="<td>"+this.cname+"</td>";
@@ -34,6 +38,7 @@
 		 html+="<td><a>"+更新+"</a></td>";
 	     html+="<td><a>"+删除+"</a></td>"; 
          html+="</tr>";
+         alert(html);
  		 $(html).appendTo($("#alternatecolor"));
 	  });    
 }
